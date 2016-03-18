@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SRatingBar">
+        <attr name="numStars" format="integer" />
+        <attr name="rate" format="integer" />
+        <attr name="imageSize" format="dimension"/>
+        <attr name="imagePadding" format="dimension"/>
+        <attr name="drawableNormal" format="reference"/>
+        <attr name="drawableSelected" format="reference"/>
+    </declare-styleable>
+</resources>
