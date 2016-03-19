@@ -4,11 +4,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 
+import com.arjinmc.ratinglevelbar.widgets.SLevelBar;
 import com.arjinmc.ratinglevelbar.widgets.SRatingBar;
 
 public class MainActivity extends AppCompatActivity {
 
     private SRatingBar sRatingBar;
+    private SLevelBar sLevelBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,5 +30,10 @@ public class MainActivity extends AppCompatActivity {
                 Log.e("rating",position+"");
             }
         });
+
+
+        sLevelBar = (SLevelBar) findViewById(R.id.levelbar);
+        sLevelBar.setNumStar(2);
+        Log.e("levelStart count",sLevelBar.getNumStar()+"");
     }
 }

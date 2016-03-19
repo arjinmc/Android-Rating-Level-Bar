@@ -9,4 +9,11 @@
         <attr name="drawableNormal" format="reference"/>
         <attr name="drawableSelected" format="reference"/>
     </declare-styleable>
+
+    <declare-styleable name="SLevelBar">
+        <attr name="numStars"/>
+        <attr name="image" format="reference"/>
+        <attr name="imageSize"/>
+        <attr name="imagePadding"/>
+    </declare-styleable>
 </resources>
