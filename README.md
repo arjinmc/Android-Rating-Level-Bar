@@ -3,6 +3,7 @@ customer rattingbars
   
 ![image](https://github.com/arjinmc/Android-Rating-Level-Bar/blob/master/device-2016-03-18-190752.png)  
  
+## SRattingbar
 1.in xml 
 ``` java
     <com.arjinmc.ratinglevelbar.widgets.SRatingBar
@@ -30,3 +31,22 @@ customer rattingbars
     }
   });
 ``` 
+
+## SLevelBar
+1.in xml 
+``` java
+    <com.arjinmc.ratinglevelbar.widgets.SLevelBar
+        android:id="@+id/levelbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:imageSize="10dp"
+        app:imagePadding="2dp"
+        app:image="@drawable/ic_star_s"
+        app:numStars="3"/>
+``` 
+2.in java
+``` java 
+    sLevelBar.setNumStar(2);
+    Log.e("levelStart count",sLevelBar.getNumStar()+"");
+``` 
+
